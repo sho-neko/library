@@ -1,18 +1,20 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':warning:'
+  - icon: ':heavy_check_mark:'
     path: my_template.hpp
     title: my_template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
+    '*NOT_SPECIAL_COMMENTS*': ''
+    PROBLEM: https://judge.yosupo.jp/problem/aplusb
     links:
     - https://judge.yosupo.jp/problem/aplusb
-  bundledCode: "#line 1 \"test/library_checker/sample/aplusb.cpp\"\n#define PROBLEM\
+  bundledCode: "#line 1 \"test/library_checker/sample/aplusb.test.cpp\"\n#define PROBLEM\
     \ \"https://judge.yosupo.jp/problem/aplusb\"\n#line 1 \"my_template.hpp\"\n#include\
     \ <bits/stdc++.h>\nusing namespace std;\n#include <atcoder/all>\nusing namespace\
     \ atcoder;\nusing ll = long long;\nusing ql = queue<ll>;\nusing sl = set<ll>;\n\
@@ -23,7 +25,7 @@ data:
     Yes\\n\";return;}\n#define NO {cout<<\"No\\n\";return;}\n#define rep1(i,n) for\
     \ (ll i = 1; i <= ((ll)n); ++i)\n#define rep(i,n) for (ll i = 0; i < ((ll)n);\
     \ ++i)\n#define ALL(a)  (a).begin(),(a).end()\n#define rALL(a)  (a).rbegin(),(a).rend()\n\
-    #define INF ((1LL<<62)-(1LL<<31))\n#line 3 \"test/library_checker/sample/aplusb.cpp\"\
+    #define INF ((1LL<<62)-(1LL<<31))\n#line 3 \"test/library_checker/sample/aplusb.test.cpp\"\
     \n\nvoid solve(){\n    ll a,b;\n    cin>>a>>b;\n    cout<<a+b<<endl;\n}\n\nint\
     \ main(){\n    int t=1;\n    rep(i,t)solve();\n    return 0;\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/aplusb\"\n#include \"my_template.hpp\"\
@@ -31,16 +33,16 @@ data:
     \ main(){\n    int t=1;\n    rep(i,t)solve();\n    return 0;\n}"
   dependsOn:
   - my_template.hpp
-  isVerificationFile: false
-  path: test/library_checker/sample/aplusb.cpp
+  isVerificationFile: true
+  path: test/library_checker/sample/aplusb.test.cpp
   requiredBy: []
-  timestamp: '2024-01-30 23:47:31+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
+  timestamp: '2024-01-30 23:54:51+09:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: test/library_checker/sample/aplusb.cpp
+documentation_of: test/library_checker/sample/aplusb.test.cpp
 layout: document
 redirect_from:
-- /library/test/library_checker/sample/aplusb.cpp
-- /library/test/library_checker/sample/aplusb.cpp.html
-title: test/library_checker/sample/aplusb.cpp
+- /verify/test/library_checker/sample/aplusb.test.cpp
+- /verify/test/library_checker/sample/aplusb.test.cpp.html
+title: test/library_checker/sample/aplusb.test.cpp
 ---

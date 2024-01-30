@@ -1,14 +1,14 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy:
-  - icon: ':warning:'
-    path: test/library_checker/sample/aplusb.cpp
-    title: test/library_checker/sample/aplusb.cpp
-  _extendedVerifiedWith: []
+  _extendedRequiredBy: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/library_checker/sample/aplusb.test.cpp
+    title: test/library_checker/sample/aplusb.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: '#line 1 "my_template.hpp"
@@ -102,11 +102,11 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: my_template.hpp
-  requiredBy:
-  - test/library_checker/sample/aplusb.cpp
+  requiredBy: []
   timestamp: '2024-01-30 23:46:46+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/library_checker/sample/aplusb.test.cpp
 documentation_of: my_template.hpp
 layout: document
 redirect_from:
