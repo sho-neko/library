@@ -2,14 +2,14 @@
 #include <algorithm>
 #include <iostream>
 #include <vector>
-#define REP(i, n) for (int i = 0; (i) < (int)(n); ++ (i))
+#define rep(i, n) for (int i = 0; (i) < (int)(n); ++ (i))
 #define ALL(x) std::begin(x), std::end(x)
 using namespace std;
 
 int main() {
     int n; cin >> n;
     vector<int> s(n);
-    REP (i, n) {
+    rep (i, n) {
         cin >> s[i];
     }
     int q; cin >> q;
