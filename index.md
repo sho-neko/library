@@ -1,6 +1,11 @@
 ---
 data:
-  libraryCategories: []
+  libraryCategories:
+  - name: .
+    pages:
+    - icon: ':warning:'
+      path: my_template.hpp
+      title: my_template.hpp
   verificationCategories:
   - name: .
     pages:
