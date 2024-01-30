@@ -1,7 +1,10 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: test/library_checker/sample/aplusb.cpp
+    title: test/library_checker/sample/aplusb.cpp
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
@@ -99,7 +102,8 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: my_template.hpp
-  requiredBy: []
+  requiredBy:
+  - test/library_checker/sample/aplusb.cpp
   timestamp: '2024-01-30 23:46:46+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
