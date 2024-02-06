@@ -26,18 +26,19 @@ data:
     \ (ll i = 1; i <= ((ll)n); ++i)\n#define rep(i,n) for (ll i = 0; i < ((ll)n);\
     \ ++i)\n#define ALL(a)  (a).begin(),(a).end()\n#define rALL(a)  (a).rbegin(),(a).rend()\n\
     #define INF ((1LL<<62)-(1LL<<31))\n#line 3 \"test/library_checker/sample/many_aplusb.test.cpp\"\
-    \n\nvoid solve(){\n    ll a,b;\n    cin>>a>>b;\n    cout<<a+b<<endl;\n}\n\nint\
-    \ main(){\n    int t=1;\n    cin>>t;\n    rep(i,t)solve();\n    return 0;\n}\n"
+    \n\nvoid solve(){\n    ll a,b;\n    cin>>a>>b;\n    cout<<a+b<<\"\\n\";\n}\n\n\
+    int main(){\n    ios_base::sync_with_stdio(0);\n    cin.tie(nullptr);\n    int\
+    \ t=1;\n    cin>>t;\n    rep(i,t)solve();\n    return 0;\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/many_aplusb\"\n#include\
-    \ \"my_template.hpp\"\n\nvoid solve(){\n    ll a,b;\n    cin>>a>>b;\n    cout<<a+b<<endl;\n\
-    }\n\nint main(){\n    int t=1;\n    cin>>t;\n    rep(i,t)solve();\n    return\
-    \ 0;\n}"
+    \ \"my_template.hpp\"\n\nvoid solve(){\n    ll a,b;\n    cin>>a>>b;\n    cout<<a+b<<\"\
+    \\n\";\n}\n\nint main(){\n    ios_base::sync_with_stdio(0);\n    cin.tie(nullptr);\n\
+    \    int t=1;\n    cin>>t;\n    rep(i,t)solve();\n    return 0;\n}"
   dependsOn:
   - my_template.hpp
   isVerificationFile: true
   path: test/library_checker/sample/many_aplusb.test.cpp
   requiredBy: []
-  timestamp: '2024-02-06 17:18:17+09:00'
+  timestamp: '2024-02-06 17:42:13+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/library_checker/sample/many_aplusb.test.cpp
