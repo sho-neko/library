@@ -4,10 +4,12 @@
 void solve(){
     ll a,b;
     cin>>a>>b;
-    cout<<a+b<<endl;
+    cout<<a+b<<"\n";
 }
 
 int main(){
+    ios_base::sync_with_stdio(0);
+    cin.tie(nullptr);
     int t=1;
     cin>>t;
     rep(i,t)solve();
