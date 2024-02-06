@@ -17,5 +17,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/library_checker/sample/aplusb.test.cpp
       title: test/library_checker/sample/aplusb.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/library_checker/sample/many_aplusb.test.cpp
+      title: test/library_checker/sample/many_aplusb.test.cpp
 layout: toppage
 ---

@@ -6,6 +6,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/library_checker/sample/aplusb.test.cpp
     title: test/library_checker/sample/aplusb.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/library_checker/sample/many_aplusb.test.cpp
+    title: test/library_checker/sample/many_aplusb.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -107,6 +110,7 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/library_checker/sample/aplusb.test.cpp
+  - test/library_checker/sample/many_aplusb.test.cpp
 documentation_of: my_template.hpp
 layout: document
 redirect_from:
