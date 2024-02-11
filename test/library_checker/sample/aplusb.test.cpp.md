@@ -15,7 +15,7 @@ data:
     links:
     - https://judge.yosupo.jp/problem/aplusb
   bundledCode: "#line 1 \"test/library_checker/sample/aplusb.test.cpp\"\n#define PROBLEM\
-    \ \"https://judge.yosupo.jp/problem/aplusb\"\n#line 1 \"my_template.hpp\"\n#include\
+    \ \"https://judge.yosupo.jp/problem/aplusb\"\n#line 2 \"my_template.hpp\"\n#include\
     \ <bits/stdc++.h>\nusing namespace std;\n#include <atcoder/all>\nusing namespace\
     \ atcoder;\nusing ll = long long;\nusing ql = queue<ll>;\nusing sl = set<ll>;\n\
     using vl=vector<ll>;\nusing msl=multiset<ll>;\nusing Graph = vector<vector<ll>>;\n\
@@ -36,7 +36,7 @@ data:
   isVerificationFile: true
   path: test/library_checker/sample/aplusb.test.cpp
   requiredBy: []
-  timestamp: '2024-01-30 23:54:51+09:00'
+  timestamp: '2024-02-11 20:31:56+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/library_checker/sample/aplusb.test.cpp

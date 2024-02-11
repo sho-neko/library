@@ -1,7 +1,13 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: data_structure/unionfind.hpp
+    title: data_structure/unionfind.hpp
+  - icon: ':warning:'
+    path: test/library_checker/data_structure/unionfind.cpp
+    title: test/library_checker/data_structure/unionfind.cpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/library_checker/sample/aplusb.test.cpp
@@ -14,7 +20,7 @@ data:
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
-  bundledCode: '#line 1 "my_template.hpp"
+  bundledCode: '#line 2 "my_template.hpp"
 
     #include <bits/stdc++.h>
 
@@ -59,7 +65,9 @@ data:
     #define INF ((1LL<<62)-(1LL<<31))
 
     '
-  code: '#include <bits/stdc++.h>
+  code: '#pragma once
+
+    #include <bits/stdc++.h>
 
     using namespace std;
 
@@ -105,8 +113,10 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: my_template.hpp
-  requiredBy: []
-  timestamp: '2024-01-30 23:46:46+09:00'
+  requiredBy:
+  - test/library_checker/data_structure/unionfind.cpp
+  - data_structure/unionfind.hpp
+  timestamp: '2024-02-11 20:31:56+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/library_checker/sample/aplusb.test.cpp

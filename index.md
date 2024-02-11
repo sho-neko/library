@@ -1,11 +1,21 @@
 ---
 data:
   libraryCategories:
+  - name: data_structure
+    pages:
+    - icon: ':warning:'
+      path: data_structure/unionfind.hpp
+      title: data_structure/unionfind.hpp
   - name: .
     pages:
     - icon: ':heavy_check_mark:'
       path: my_template.hpp
       title: my_template.hpp
+  - name: test/library_checker/data_structure
+    pages:
+    - icon: ':warning:'
+      path: test/library_checker/data_structure/unionfind.cpp
+      title: test/library_checker/data_structure/unionfind.cpp
   verificationCategories:
   - name: .
     pages:
