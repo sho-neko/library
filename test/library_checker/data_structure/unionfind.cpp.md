@@ -34,21 +34,25 @@ data:
     \ x != y;\n    }\n    bool same(int x, int y) { return root(x) == root(y); }\n\
     \    int root(int x) { return data[x] < 0 ? x : data[x] = root(data[x]); }\n \
     \   int size(int x) { return -data[root(x)]; }\n};\n#line 4 \"test/library_checker/data_structure/unionfind.cpp\"\
-    \nint main() {\n    ll n, q;\n    cin >> n >> q;\n    UnionFind uf(n);\n    rep(i,\
-    \ q) {\n        ll t, u, v;\n        cin >> t >> u >> v;\n\t\tif(t == 0) uf.merge(u,\
-    \ v);\n\t\telse cout << uf.same(u, v) << endl;\n    }\n}\n"
+    \nvoid solve() {\n    ll n, q;\n    cin >> n >> q;\n    UnionFind uf(n);\n   \
+    \ rep(i, q) {\n        ll t, u, v;\n        cin >> t >> u >> v;\n        if(t\
+    \ == 0)\n            uf.merge(u, v);\n        else\n            cout << uf.same(u,\
+    \ v) << \"\\n\";\n    }\n}\nint main() {\n    ios_base::sync_with_stdio(0);\n\
+    \    cin.tie(nullptr);\n    ll t = 1;\n    rep(i, t) solve();\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/unionfind\"\n#include \"\
     ../../../data_structure/unionfind.hpp\"\n#include \"../../../my_template.hpp\"\
-    \nint main() {\n    ll n, q;\n    cin >> n >> q;\n    UnionFind uf(n);\n    rep(i,\
-    \ q) {\n        ll t, u, v;\n        cin >> t >> u >> v;\n\t\tif(t == 0) uf.merge(u,\
-    \ v);\n\t\telse cout << uf.same(u, v) << endl;\n    }\n}\n"
+    \nvoid solve() {\n    ll n, q;\n    cin >> n >> q;\n    UnionFind uf(n);\n   \
+    \ rep(i, q) {\n        ll t, u, v;\n        cin >> t >> u >> v;\n        if(t\
+    \ == 0)\n            uf.merge(u, v);\n        else\n            cout << uf.same(u,\
+    \ v) << \"\\n\";\n    }\n}\nint main() {\n    ios_base::sync_with_stdio(0);\n\
+    \    cin.tie(nullptr);\n    ll t = 1;\n    rep(i, t) solve();\n}\n"
   dependsOn:
   - data_structure/unionfind.hpp
   - my_template.hpp
   isVerificationFile: false
   path: test/library_checker/data_structure/unionfind.cpp
   requiredBy: []
-  timestamp: '2024-02-11 20:34:05+09:00'
+  timestamp: '2024-02-11 20:48:20+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: test/library_checker/data_structure/unionfind.cpp
