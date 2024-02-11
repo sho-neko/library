@@ -1,3 +1,4 @@
+#define PROBLEM "https://judge.yosupo.jp/problem/unionfind"
 #include "../../../data_structure/unionfind.hpp"
 #include "../../../my_template.hpp"
 int main() {
