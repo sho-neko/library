@@ -6,8 +6,17 @@ data:
     path: data_structure/unionfind.hpp
     title: data_structure/unionfind.hpp
   - icon: ':warning:'
+    path: graph/lowlink.hpp
+    title: graph/lowlink.hpp
+  - icon: ':warning:'
+    path: graph/two-edge-connected_components.hpp
+    title: graph/two-edge-connected_components.hpp
+  - icon: ':warning:'
     path: test/library_checker/data_structure/unionfind.cpp
     title: test/library_checker/data_structure/unionfind.cpp
+  - icon: ':warning:'
+    path: test/library_checker/graph/two-edge-connected_components.cpp
+    title: test/library_checker/graph/two-edge-connected_components.cpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/library_checker/sample/aplusb.test.cpp
@@ -128,6 +137,9 @@ data:
   requiredBy:
   - data_structure/unionfind.hpp
   - test/library_checker/data_structure/unionfind.cpp
+  - test/library_checker/graph/two-edge-connected_components.cpp
+  - graph/lowlink.hpp
+  - graph/two-edge-connected_components.hpp
   timestamp: '2024-04-13 17:29:37+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:

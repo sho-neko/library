@@ -6,6 +6,14 @@ data:
     - icon: ':warning:'
       path: data_structure/unionfind.hpp
       title: data_structure/unionfind.hpp
+  - name: graph
+    pages:
+    - icon: ':warning:'
+      path: graph/lowlink.hpp
+      title: graph/lowlink.hpp
+    - icon: ':warning:'
+      path: graph/two-edge-connected_components.hpp
+      title: graph/two-edge-connected_components.hpp
   - name: .
     pages:
     - icon: ':heavy_check_mark:'
@@ -16,6 +24,11 @@ data:
     - icon: ':warning:'
       path: test/library_checker/data_structure/unionfind.cpp
       title: test/library_checker/data_structure/unionfind.cpp
+  - name: test/library_checker/graph
+    pages:
+    - icon: ':warning:'
+      path: test/library_checker/graph/two-edge-connected_components.cpp
+      title: test/library_checker/graph/two-edge-connected_components.cpp
   verificationCategories:
   - name: .
     pages:
