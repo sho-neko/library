@@ -14,15 +14,16 @@ data:
   _verificationStatusIcon: ':warning:'
   attributes:
     links: []
-  bundledCode: "#line 2 \"my_template.hpp\"\n#include <bits/stdc++.h>\nusing namespace\
-    \ std;\n#include <atcoder/all>\nusing namespace atcoder;\nusing ll = long long;\n\
-    using ql = queue<ll>;\nusing sl = set<ll>;\nusing vl=vector<ll>;\nusing msl=multiset<ll>;\n\
-    using Graph = vector<vector<ll>>;\nusing P=pair<ll,ll>;\ntemplate<typename T>\
-    \ inline bool chmax(T &a, T b) { return ((a < b) ? (a = b, true) : (false)); }\n\
-    template<typename T> inline bool chmin(T &a, T b) { return ((a > b) ? (a = b,\
-    \ true) : (false)); }\n#define YES {cout<<\"Yes\\n\";return;}\n#define NO {cout<<\"\
-    No\\n\";return;}\n#define rep1(i,n) for (ll i = 1; i <= ((ll)n); ++i)\n#define\
-    \ rep(i,n) for (ll i = 0; i < ((ll)n); ++i)\n#define ALL(a)  (a).begin(),(a).end()\n\
+  bundledCode: "#line 2 \"my_template.hpp\"\n#pragma GCC target(\"avx2\")\n#pragma\
+    \ GCC optimize(\"O3\")\n#pragma GCC optimize(\"unroll-loops\")\n#include <bits/stdc++.h>\n\
+    using namespace std;\n#include <atcoder/all>\nusing namespace atcoder;\nusing\
+    \ ll = long long;\nusing ql = queue<ll>;\nusing sl = set<ll>;\nusing vl=vector<ll>;\n\
+    using msl=multiset<ll>;\nusing Graph = vector<vector<ll>>;\nusing P=pair<ll,ll>;\n\
+    template<typename T> inline bool chmax(T &a, T b) { return ((a < b) ? (a = b,\
+    \ true) : (false)); }\ntemplate<typename T> inline bool chmin(T &a, T b) { return\
+    \ ((a > b) ? (a = b, true) : (false)); }\n#define YES {cout<<\"Yes\\n\";return;}\n\
+    #define NO {cout<<\"No\\n\";return;}\n#define rep1(i,n) for (ll i = 1; i <= ((ll)n);\
+    \ ++i)\n#define rep(i,n) for (ll i = 0; i < ((ll)n); ++i)\n#define ALL(a)  (a).begin(),(a).end()\n\
     #define rALL(a)  (a).rbegin(),(a).rend()\n#define INF ((1LL<<62)-(1LL<<31))\n\
     #line 2 \"data_structure/unionfind.hpp\"\nstruct UnionFind {\n    vector<int>\
     \ data;\n    UnionFind(int size) : data(size, -1) {}\n    bool merge(int x, int\
@@ -46,7 +47,7 @@ data:
   path: data_structure/unionfind.hpp
   requiredBy:
   - test/library_checker/data_structure/unionfind.cpp
-  timestamp: '2024-02-11 20:31:56+09:00'
+  timestamp: '2024-04-13 17:29:37+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: data_structure/unionfind.hpp

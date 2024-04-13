@@ -22,6 +22,12 @@ data:
     links: []
   bundledCode: '#line 2 "my_template.hpp"
 
+    #pragma GCC target("avx2")
+
+    #pragma GCC optimize("O3")
+
+    #pragma GCC optimize("unroll-loops")
+
     #include <bits/stdc++.h>
 
     using namespace std;
@@ -66,6 +72,12 @@ data:
 
     '
   code: '#pragma once
+
+    #pragma GCC target("avx2")
+
+    #pragma GCC optimize("O3")
+
+    #pragma GCC optimize("unroll-loops")
 
     #include <bits/stdc++.h>
 
@@ -114,13 +126,13 @@ data:
   isVerificationFile: false
   path: my_template.hpp
   requiredBy:
-  - test/library_checker/data_structure/unionfind.cpp
   - data_structure/unionfind.hpp
-  timestamp: '2024-02-11 20:31:56+09:00'
+  - test/library_checker/data_structure/unionfind.cpp
+  timestamp: '2024-04-13 17:29:37+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/library_checker/sample/aplusb.test.cpp
   - test/library_checker/sample/many_aplusb.test.cpp
+  - test/library_checker/sample/aplusb.test.cpp
 documentation_of: my_template.hpp
 layout: document
 redirect_from:
