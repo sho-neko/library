@@ -44,37 +44,40 @@ data:
     \      rep(i, G.size()) {\n            if(ord[i] == -1)\n                dfs(i,\
     \ -1);\n        }\n    }\n};\n#line 3 \"graph/two-edge-connected_components.hpp\"\
     \nstruct TwoEdgeConnectedComponents {\n    Graph G;\n    set<P> bridge;\n    vector<ll>\
-    \ comp;\n    void dfs(ll v,ll par, ll idx){\n        comp[v] = idx;\n        for(auto\
-    \ nex:G[v]){\n            if(nex == par) continue;\n            if(comp[nex] !=\
-    \ -1) continue;\n            if(bridge.count({v,nex})) continue;\n           \
-    \ dfs(nex,v,idx);\n        }\n        return;\n    }\n    TwoEdgeConnectedComponents(Graph\
-    \ G) : G(G){};\n    void build(Graph &t){\n        LowLink lowlink(G);\n     \
-    \   lowlink.build();\n        ll n = G.size();\n        comp.assign(n,-1);\n \
-    \       for(auto a:lowlink.bridge){\n            bridge.insert(a);\n         \
-    \   bridge.insert({a.second,a.first});\n        }\n        ll now = 0;\n     \
-    \   rep(i,n){\n            if(comp[i] == -1){\n                dfs(i,-1,now++);\n\
-    \            }\n        }\n        t.resize(now);\n        rep(i,n)t[comp[i]].emplace_back(i);\n\
-    \        return;\n    }\n};\n"
-  code: "#include \"my_template.hpp\"\n#include \"lowlink.hpp\"\nstruct TwoEdgeConnectedComponents\
-    \ {\n    Graph G;\n    set<P> bridge;\n    vector<ll> comp;\n    void dfs(ll v,ll\
-    \ par, ll idx){\n        comp[v] = idx;\n        for(auto nex:G[v]){\n       \
-    \     if(nex == par) continue;\n            if(comp[nex] != -1) continue;\n  \
-    \          if(bridge.count({v,nex})) continue;\n            dfs(nex,v,idx);\n\
-    \        }\n        return;\n    }\n    TwoEdgeConnectedComponents(Graph G) :\
-    \ G(G){};\n    void build(Graph &t){\n        LowLink lowlink(G);\n        lowlink.build();\n\
-    \        ll n = G.size();\n        comp.assign(n,-1);\n        for(auto a:lowlink.bridge){\n\
-    \            bridge.insert(a);\n            bridge.insert({a.second,a.first});\n\
-    \        }\n        ll now = 0;\n        rep(i,n){\n            if(comp[i] ==\
-    \ -1){\n                dfs(i,-1,now++);\n            }\n        }\n        t.resize(now);\n\
-    \        rep(i,n)t[comp[i]].emplace_back(i);\n        return;\n    }\n};"
+    \ comp;\n    void dfs(ll v, ll par, ll idx) {\n        comp[v] = idx;\n      \
+    \  for(auto nex : G[v]) {\n            if(nex == par)\n                continue;\n\
+    \            if(comp[nex] != -1)\n                continue;\n            if(bridge.count({v,\
+    \ nex}))\n                continue;\n            dfs(nex, v, idx);\n        }\n\
+    \        return;\n    }\n    TwoEdgeConnectedComponents(Graph G) : G(G){};\n \
+    \   void build(Graph &t) {\n        LowLink lowlink(G);\n        lowlink.build();\n\
+    \        ll n = G.size();\n        comp.assign(n, -1);\n        for(auto a : lowlink.bridge)\
+    \ {\n            bridge.insert(a);\n            bridge.insert({a.second, a.first});\n\
+    \        }\n        ll now = 0;\n        rep(i, n) {\n            if(comp[i] ==\
+    \ -1) {\n                dfs(i, -1, now++);\n            }\n        }\n      \
+    \  t.resize(now);\n        rep(i, n) t[comp[i]].emplace_back(i);\n        return;\n\
+    \    }\n};\n"
+  code: "#include \"lowlink.hpp\"\n#include \"my_template.hpp\"\nstruct TwoEdgeConnectedComponents\
+    \ {\n    Graph G;\n    set<P> bridge;\n    vector<ll> comp;\n    void dfs(ll v,\
+    \ ll par, ll idx) {\n        comp[v] = idx;\n        for(auto nex : G[v]) {\n\
+    \            if(nex == par)\n                continue;\n            if(comp[nex]\
+    \ != -1)\n                continue;\n            if(bridge.count({v, nex}))\n\
+    \                continue;\n            dfs(nex, v, idx);\n        }\n       \
+    \ return;\n    }\n    TwoEdgeConnectedComponents(Graph G) : G(G){};\n    void\
+    \ build(Graph &t) {\n        LowLink lowlink(G);\n        lowlink.build();\n \
+    \       ll n = G.size();\n        comp.assign(n, -1);\n        for(auto a : lowlink.bridge)\
+    \ {\n            bridge.insert(a);\n            bridge.insert({a.second, a.first});\n\
+    \        }\n        ll now = 0;\n        rep(i, n) {\n            if(comp[i] ==\
+    \ -1) {\n                dfs(i, -1, now++);\n            }\n        }\n      \
+    \  t.resize(now);\n        rep(i, n) t[comp[i]].emplace_back(i);\n        return;\n\
+    \    }\n};"
   dependsOn:
-  - my_template.hpp
   - graph/lowlink.hpp
+  - my_template.hpp
   isVerificationFile: false
   path: graph/two-edge-connected_components.hpp
   requiredBy:
   - test/library_checker/graph/two-edge-connected_components.cpp
-  timestamp: '2024-04-13 20:15:28+09:00'
+  timestamp: '2024-04-13 20:16:59+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: graph/two-edge-connected_components.hpp
